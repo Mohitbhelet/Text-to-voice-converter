@@ -1,0 +1,21 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text-to-Voice Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <textarea id="textInput" placeholder="Enter text..."></textarea>
+        <div>
+            <label for="voiceSelect">Select Voice:</label>
+            <select id="voiceSelect"></select>
+        </div>
+        <button onclick="generateVoice()">Generate Voice</button>
+        <a id="downloadLink" style="display:none" download="generated_voice.mp3">Download Voice</a>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
